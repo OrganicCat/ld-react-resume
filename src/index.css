@@ -1,5 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+@font-face {
+  font-family: Deutchlander;
+  src: url('../public/fonts/Deutschlander.otf') format('opentype');
+}
+
+@font-face {
+  font-family: MagicCards;
+  src: url('../public/fonts/Mplantin.ttf');
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
 }
+
