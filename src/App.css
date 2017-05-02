@@ -92,7 +92,7 @@
   height: 150px;
   width: 100%;
   border: 1px solid #000;
-  background-color: #FFF;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 .card__content__text {
   padding: 1rem;
@@ -120,6 +120,7 @@
 .card--white { 
   font-family: 'MagicCards';
   background-color: #FFFFFF;
+  background-image: url('../public/imgs/imagetreatments-texture3.png');
   border: 1rem solid #000;
   border-radius: 5px;
   padding: 1rem;
@@ -131,6 +132,7 @@
 .card--black { 
   font-family: 'MagicCards';
   background-color: #555555;
+  background-image: url('../public/imgs/imagetreatments-texture3.png');
   border: 1rem solid #000;
   border-radius: 5px;
   padding: 1rem;
@@ -142,6 +144,7 @@
 .card--green { 
   font-family: 'MagicCards';
   background-color: #008000;
+  background-image: url('../public/imgs/imagetreatments-texture3.png');
   border: 1rem solid #000;
   border-radius: 5px;
   padding: 1rem;
@@ -153,6 +156,7 @@
 .card--red { 
   font-family: 'MagicCards';
   background-color: #FF0000;
+  background-image: url('../public/imgs/imagetreatments-texture3.png');
   border: 1rem solid #000;
   border-radius: 5px;
   padding: 1rem;
@@ -164,6 +168,7 @@
 .card--blue { 
   font-family: 'MagicCards';
   background-color: #4682B4;
+  background-image: url('../public/imgs/imagetreatments-texture3.png');
   border: 1rem solid #000;
   border-radius: 5px;
   padding: 1rem;
