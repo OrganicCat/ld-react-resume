@@ -28,16 +28,8 @@ class App extends Component {
           name: "My Interests",
           path: '/interests'
         }
-      ]
-    }) 
-  }
-
-  render() {
-    const content = {
-      mainContent: "I'm a developer, designer, writer, socialite, reader, gamer, dancer",
-    }
-
-    const bodyContent = [
+      ],
+      content: [
         {
           id: 1,
           cardHeader: 'HTML + Sites',
@@ -84,45 +76,21 @@ class App extends Component {
           color: 'blue'
         }
       ]
+    }) 
+  }
 
-      const bodyContent2 = [
-        {
-          id: 1,
-          cardHeader: 'HTML',
-          cardContent: 'Wow, I have worked with SO MUCH HTML. I can tag with the best of them.',
-          color: 'white'
-        },
-        {
-          id: 2,
-          cardHeader: 'CSS',
-          cardContent: 'Box models, typography, and implementation are what makes the web go round',
-          color: 'black'
-        },
-        {
-          id: 3,
-          cardHeader: 'JavaScript',
-          cardContent: 'Object oriented programming, now with skills including more type checking and class syntactical sugar',
-          color: 'green'
-        },
-        {
-          id: 4,
-          cardHeader: 'AngularJS',
-          cardContent: 'A popular flavor of the past few years, I have experience in designing and developing with 1.x',
-          color: 'red'
-        },
-        {
-          id: 5,
-          cardHeader: 'React',
-          cardContent: 'Guess what this site is built in?',
-          color: 'blue'
-        }
-      ]
+  render() {
+    const content = {
+      mainContent: "I'm a developer, designer, writer, socialite, reader, gamer, dancer",
+    }
+
+    
     return (
       <div className="App">
         <Header name={this.state.name} />
         <Menu links={this.state.links} />
         <Banner content={content} />
-        <MainContent content={bodyContent} />
+        <MainContent content={this.state.content} displayPage={this.context.route} />
       </div>
     );
   }

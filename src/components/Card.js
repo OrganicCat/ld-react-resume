@@ -12,7 +12,7 @@ export class Card extends Component {
             <div className={this.color}>
                 <div className="card__header">{this.props.cardHeader}</div>
                 <img className="card__image" src={this.props.cardData.image} alt="Skill Sekelton"/>
-                <div className="card__type">Create - Skeleton</div>
+                <div className="card__type">{this.props.cardData.type}</div>
                 <div className="card__content">
                     <div className="card__content__text">{this.props.cardContent}</div>
                 </div>
